@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Marker Clusters</title>
+
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+    <!-- d3 JS -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+
+    <div id="map"></div>
+
+    <div id="basemaps-wrapper">
+      <form action="">
+        <input type="radio" name="baseMap" value="Satellite"> Satellite <br>
+        <input type="radio" name="baseMap" value="Grayscale"> Grayscale<br>
+        <input type="radio" name="baseMap" value="Outdoors"> Outdoors<hr>
+        <input type="checkbox" name="layer" value="FaultLines">Fault Lines<br>
+        <input type="checkbox" name="layer" value="Earthquakes">Earthquakes
+      </form>
+  </div>
+
+    <script type="text/javascript" src="logic.js"></script>
+
+  </body>
+</html>
